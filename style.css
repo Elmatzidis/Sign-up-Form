@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Lora", serif;
+}
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+}
+
+.Image-place {
+  width: 40vw;
+  height: 100%;
+  background-image: url("Images/Space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forms-side {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-side-text {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 30px;
+}
+
+.form-side-text p:first-child {
+  width: 100%;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: balance;
+}
+
+.form-side-text > p:last-child {
+  font-size: 1.5em;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+.input-form{
+    height: 40%;
+}
+
