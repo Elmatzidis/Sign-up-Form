@@ -43,11 +43,12 @@ body {
   flex-direction: column;
   position: relative;
   left: 30px;
+  bottom: 40px;
 }
 
 .form-side-text p:first-child {
   width: 100%;
-  font-size: 1.6em;
+  font-size: 1.4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +56,7 @@ body {
 }
 
 .form-side-text > p:last-child {
-  font-size: 1.5em;
+  font-size: 1.3em;
   width: 100%;
   display: flex;
   justify-content: start;
@@ -64,7 +65,62 @@ body {
   top: 50px;
 }
 
-.input-form{
-    height: 40%;
+.input-form {
+  height: 40%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-shadow: 0 0 7px black;
 }
 
+.input-form p {
+  font-size: 1.5em;
+  width: min(50%, 150px);
+  position: relative;
+  top: -40%;
+  left: 77px;
+}
+
+form {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 120px;
+  position: relative;
+  left: -100px;
+}
+
+input {
+  font-size: 1.3em;
+  width: min(90%, 400px);
+  padding: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-side-button {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+
+}
+
+.take-action{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.take-action button{
+  font-size: 2em;
+}
+
+.take-action .login{
+ margin:40px 20px;
+}
