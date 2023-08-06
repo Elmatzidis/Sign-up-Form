@@ -14,76 +14,70 @@
         </div>
       </div>
       <div class="forms-side">
-        <div class="form-side-text">
-          <p>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            now to get started.
-          </p>
-          <p>You know you want to.</p>
-        </div>
-        <div class="input-form">
-          <p>Let's do this</p>
-          <form action="#" method="get">
-            <div class="input">
-              <input
-                type="text"
-                required
-                name="First-name"
-              
-              />
-              <span class="floating-label">First-name</span>
-            </div>
-            <div class="input">
-              <input
-                type="text"
-                required
-                name="Last-name"
-               
-              />
-              <span class="floating-label">Last-name</span>
-            </div>
-            <div class="input">
-              <input type="email" required name="Email" />
-              <span class="floating-label">Email</span>
-            </div>
-            <div class="input">
-              <input
-                required
-                type="tel"
-                name="Phone-number"
-                
-                maxlength="8"
-              />
-              <span class="floating-label">Phone-number</span>
-            </div>
-            <div class="input">
-              <input
-                type="password"
-                required
-                name="Password"
-                
-              />
-              <span class="floating-label">Password</span>
-            </div>
-            <div class="input">
-              <input
-                required
-                type="password"
-                name="Confirm-Password"
-                
-              />
-              <span class="floating-label">Confirm-Password</span>
-            </div>
-            <div class="take-action">
-              <button type="submit">Create Account</button>
-              <div class="login">
-                Already have an account? <a href="#">Log in</a>
+        <div class="blur-effect">
+          <div class="form-side-text">
+            <p>
+              Welcome to NASA's sign-up page! Take a step towards your dreams
+              and explore the universe with us. Sign up now to join a passionate
+              community of space enthusiasts. Enter your details below and let
+              the cosmic adventure begin!
+            </p>
+            <span>Why sign-up?</span>
+            <p>
+              Unlock a world of cutting-edge research and discoveries. Whether
+              you dream of space travel or love astronomy, NASA offers an
+              extraordinary experience.
+            </p>
+          </div>
+          <div class="input-form">
+            <p>Get Started:</p>
+            <form action="#" method="get">
+              <div class="input">
+                <input type="text" id="First-name" required name="First-name" />
+                <span class="floating-label">First-name</span>
               </div>
-            </div>
-          </form>
+              <div class="input">
+                <input type="text" id="Last-name" required name="Last-name" />
+                <span class="floating-label">Last-name</span>
+              </div>
+              <div class="input">
+                <input type="email" required name="Email" />
+                <span class="floating-label">Email</span>
+              </div>
+              <div class="input">
+                <input
+                  required
+                  type="tel"
+                  id="Phone-number"
+                  name="Phone-number"
+                  maxlength="8"
+                />
+                <span class="floating-label">Phone-number</span>
+              </div>
+              <div class="input">
+                <input id="password" type="password" required name="Password" />
+                <span class="floating-label">Password</span>
+              </div>
+              <div class="input">
+                <input
+                  required
+                  id="password-confirm"
+                  type="password"
+                  name="Confirm-Password"
+                />
+                <span class="floating-label">Confirm-Password</span>
+              </div>
+              <div class="take-action">
+                <button id="submit" type="submit">Create Account</button>
+                <div class="login">
+                  Already have an account? <a href="#">Log in</a>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+    <script src="scirpt.js"></script>
   </body>
 </html>

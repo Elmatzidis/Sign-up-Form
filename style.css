@@ -21,40 +21,22 @@ body {
 .Image-place {
   width: 40vw;
   height: 100%;
-  background-image: url("Images/Space.jpg");
+  background-image: url("Images/Space2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .logo-place {
   height: 100%;
   width: 100%;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label {
-  top: -50px;
-  bottom: 10px;
-  left: 20px;
-  font-size: 0.7em;
-  opacity: 1;
-}
-.floating-label {
-  position: relative;
-  opacity: 0.5;
-  pointer-events: none;
-  font-size: 1.2em;
-  left: 20px;
-  top: -30px;
-  transition: 0.2s ease all;
-}
+
 .logo {
   position: relative;
-  bottom: 10%;
-  background-image: url("Images/Logo.png");
+  top: 0;
+  background-image: url("Images/Logo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -64,11 +46,20 @@ input:not(:focus):valid ~ .floating-label {
 }
 
 .forms-side {
+  border-left: 8px solid #fff;
   width: 60vw;
   display: flex;
   flex-direction: column;
+  background-image: url("Images/Space3.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
+.blur-effect {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+}
 .form-side-text {
   width: 90%;
   height: 30%;
@@ -78,34 +69,52 @@ input:not(:focus):valid ~ .floating-label {
   flex-direction: column;
   position: relative;
   left: 30px;
-  bottom: 40px;
+  text-wrap: balance;
+  color: #fff;
 }
 
 .form-side-text p:first-child {
   width: 100%;
-  font-size: 1.6em;
+  font-size: 1.3em;
+  line-height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-wrap: balance;
+}
+.form-side-text span {
+  position: relative;
+  top: 20px;
+  font-weight: 400;
+  font-size: 1.4em;
+  width: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .form-side-text > p:last-child {
-  font-size: 1.3em;
+  font-size: 1.1em;
+  font-style: italic;
   width: 100%;
+  line-height: 25px;
   display: flex;
   justify-content: start;
   align-items: center;
   position: relative;
-  top: 50px;
+  top: 35px;
+  left: 20px;
 }
 
 .input-form {
   height: 40%;
+  margin-top: 20px;
   display: flex;
   justify-content: start;
   align-items: center;
   box-shadow: 0 0 7px black;
+  color: #fff;
+  font-weight: bold;
 }
 
 .input-form p {
@@ -124,19 +133,39 @@ form {
   grid-template-columns: repeat(2, 1fr);
   width: min(50%, 200px);
   width: max(50%, 700px);
-  gap: 20px 120px;
+  gap: 30px 100px;
   position: relative;
   left: -100px;
   top: 100px;
 }
 
 input {
+  background-color: transparent;
   font-size: 1.3em;
   width: min(90%, 400px);
   padding: 5px;
   border: none;
   border-bottom: 1px solid;
   transition: 150ms;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: -50px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 0.7em;
+  opacity: 1;
+}
+.floating-label {
+  position: relative;
+  opacity: 0.8;
+  pointer-events: none;
+  font-size: 1em;
+  left: 20px;
+  top: -30px;
+  transition: 0.2s ease all;
+  white-space: nowrap;
 }
 
 input:focus {
@@ -151,7 +180,7 @@ label {
 .take-action {
   height: 100%;
   position: relative;
-  top: 100px;
+  top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
