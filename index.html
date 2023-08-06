@@ -8,7 +8,11 @@
   </head>
   <body>
     <div class="content">
-      <div class="Image-place"></div>
+      <div class="Image-place">
+        <div class="logo-place">
+          <div class="logo"></div>
+        </div>
+      </div>
       <div class="forms-side">
         <div class="form-side-text">
           <p>
@@ -20,46 +24,64 @@
         </div>
         <div class="input-form">
           <p>Let's do this</p>
-          <form action="">
+          <form action="#" method="get">
             <div class="input">
-              <label for="First-name">First-name</label>
-              <input type="text" name="First-name" placeholder="First Name" />
-            </div>
-            <div class="input">
-              <label for="Last-name">Last-name</label>
-              <input type="text" name="Last-name" placeholder="Last Name" />
-            </div>
-            <div class="input">
-              <label for="Email">Email</label>
-              <input type="email" name="Email" placeholder="Email" />
-            </div>
-            <div class="input">
-              <label for="Phone-number">Phone-number</label>
               <input
+                type="text"
+                required
+                name="First-name"
+              
+              />
+              <span class="floating-label">First-name</span>
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                required
+                name="Last-name"
+               
+              />
+              <span class="floating-label">Last-name</span>
+            </div>
+            <div class="input">
+              <input type="email" required name="Email" />
+              <span class="floating-label">Email</span>
+            </div>
+            <div class="input">
+              <input
+                required
                 type="tel"
                 name="Phone-number"
-                placeholder="Phone Number"
+                
+                maxlength="8"
               />
+              <span class="floating-label">Phone-number</span>
             </div>
             <div class="input">
-              <label for="Password">Password</label>
-              <input type="password" name="Password" placeholder="Password" />
-            </div>
-            <div class="input">
-              <label for="Confirm-Password">Confirm-Password</label>
               <input
                 type="password"
-                name="Confirm-Password"
-                placeholder="Confirm Password"
+                required
+                name="Password"
+                
               />
+              <span class="floating-label">Password</span>
+            </div>
+            <div class="input">
+              <input
+                required
+                type="password"
+                name="Confirm-Password"
+                
+              />
+              <span class="floating-label">Confirm-Password</span>
+            </div>
+            <div class="take-action">
+              <button type="submit">Create Account</button>
+              <div class="login">
+                Already have an account? <a href="#">Log in</a>
+              </div>
             </div>
           </form>
-        </div>
-        <div class="form-side-button">
-          <div class="take-action">
-            <button>Create Account</button>
-            <div class="login">Already have an account? <a href="#">Log in</a></div>
-          </div>
         </div>
       </div>
     </div>
